@@ -1,0 +1,358 @@
+/* Global Styles */
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-image: url('background-light.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.3s ease;
+  margin: 0;
+  color: #333;
+}
+
+body.dark-mode {
+  background-image: url('background-dark.jpg');
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Container Layout */
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Form Fields */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="file"] {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ff0000;
+  font-size: 14px;
+}
+
+/* Carousel Styles */
+.carousel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+.carousel-item {
+  padding: 10px 15px;
+  background: #00ddff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  
+  transition: 0.2s;
+}
+
+.carousel-item:hover {
+  background: #00ffee;
+  color: #000;
+}
+
+.carousel-item.active {
+  background: #06e3fb;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+
+/* Card Preview */
+.card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  margin: 20px auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  transition: background 0.3s ease;
+}
+
+.photo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  margin: 10px 0 5px;
+  font-size: 22px;
+}
+
+.card h4 {
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Template Styles */
+.template-blackgold {
+  background: #000;
+  color: #ffd700;
+  font-family: 'Playfair Display', serif;
+}
+
+.template-pink {
+  background: #ff9a9e;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
+
+.template-modern {
+  background: #1e1e1e;
+  color: #0ef;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.template-royal {
+  background: #0084ff;
+  color: #fff;
+  font-family: 'Merriweather', serif;
+}
+
+.template-vintage {
+  background: #d8c3a5;
+  color: #4b3832;
+  font-family: 'Lora', serif;
+}
+
+.template-gray {
+  background: #3f3c3cae;
+  color: #ccc;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.template-tech {
+  background: #0ef;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.template-green {
+  background: #4caf50;
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+}
+
+.template-white {
+  background: #fff;
+  color: #000;
+  font-family: 'Quicksand', sans-serif;
+  border: 1px solid #ccc;
+}
+
+.template-red {
+  background: #ff6347;
+  color: #fff;
+  font-family: 'Bebas Neue', cursive;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #00d9ff;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0a8fb1;
+}
+
+  body {
+    background-image: url('background-light.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+    color: #000;
+  }
+
+  body.dark-mode {
+    background-image: url('background-dark.jpg');
+    color: #fff;
+  }
+
+  .container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  body.dark-mode .container {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  input[type="text"],
+  input[type="file"] {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px 0;
+  }
+
+  body.dark-mode input[type="text"],
+  body.dark-mode input[type="file"] {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #666;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  body.dark-mode label {
+    color: #ccc;
+  }
+
+  .theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .card {
+    width: 300px;
+    padding: 20px;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: background 0.3s ease;
+  }
+
+  /* Templates below (unchanged) */
+  .template-blackgold { background: #bfa14b; color: #fff; font-family: 'Playfair Display', serif; }
+  .template-pink       { background: #ff69b4; color: #fff; font-family: 'Raleway', sans-serif; }
+  .template-modern     { background: #1e1e1e; color: #0ef; font-family: 'Orbitron', sans-serif; }
+  .template-royal      { background: #007bff; color: #fff; font-family: 'Merriweather', serif; }
+  .template-vintage    { background: #d8c3a5; color: #4b3832; font-family: 'Lora', serif; }
+  .template-gray       { background: #333; color: #ccc; font-family: 'Open Sans', sans-serif; }
+  .template-tech       { background: #2c5364; color: #0ef; font-family: 'Roboto', sans-serif; }
+  .template-green      { background: #a8e063; color: #fff; font-family: 'Nunito', sans-serif; }
+  .template-white      { background: #fff; color: #000; font-family: 'Quicksand', sans-serif; border: 1px solid #ccc; }
+  .template-red        { background:#ff4b2b; color: #fff; font-family: 'Bebas Neue', cursive; }
+
+  /* === Navbar Styles === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #1a1a1a, #333);
+  padding: 1rem 2rem;
+  margin-top: 0%;
+  height: 150px;
+  width: 100%;
+  color: rgb(255, 0, 0);
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 30px;
+}
+
+.navbar .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00ccff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.9rem;
+  margin-right: 110px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ddd;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #00d0ff;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.footer a {
+  color: #00c8ff;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

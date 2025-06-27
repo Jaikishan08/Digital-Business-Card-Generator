@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Business Card Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&family=Roboto&family=Merriweather&family=Lora&family=Open+Sans&family=Orbitron&family=Quicksand&family=Nunito&family=Bebas+Neue&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Kishan's Business Card Generator</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#templateCarousel">Templates</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
+    <span id="themeIcon">🌙</span>
+  </button>
+
+  <div class="container">
+    <h1>Digital Business Card Generator</h1>
+
+    <div class="form">
+      <input type="text" id="nameInput" placeholder="Enter Your Name" />
+      <input type="text" id="roleInput" placeholder="Enter Your Role" />
+      <input type="text" id="contactInput" placeholder="Enter Your Contact Info" />
+      <label for="photoUpload">Upload Profile Photo:</label>
+      <input type="file" id="photoUpload" accept="image/*" />
+      <label for="bgImage">Upload Background Image:</label>
+      <input type="file" id="bgImage" accept="image/*" />
+    </div>
+
+    <div class="carousel" id="templateCarousel">
+      <div class="carousel-item active" data-template="template-blackgold">Black Gold</div>
+      <div class="carousel-item" data-template="template-pink">Pink</div>
+      <div class="carousel-item" data-template="template-modern">Modern</div>
+      <div class="carousel-item" data-template="template-royal">Royal</div>
+      <div class="carousel-item" data-template="template-vintage">Vintage</div>
+      <div class="carousel-item" data-template="template-gray">Gray</div>
+      <div class="carousel-item" data-template="template-tech">Tech</div>
+      <div class="carousel-item" data-template="template-green">Green</div>
+      <div class="carousel-item" data-template="template-white">White</div>
+      <div class="carousel-item" data-template="template-red">Red</div>
+    </div>
+
+    <div class="card template-blackgold" id="previewCard">
+      <div class="photo" id="previewPhoto"></div>
+      <h2 id="previewName">Your Name</h2>
+      <h4 id="previewRole">Your Role</h4>
+      <p id="previewContact">Your Contact Info</p>
+    </div>
+
+    <div class="buttons">
+      <button id="downloadBtn">Download Card</button>
+      <button onclick="location.reload()">Reset</button>
+    </div>
+  </div>
+
+  
+
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+
+  <footer class="footer">
+    <p>&copy; 2025 Kishan's Business Card Generator.All rights reserved.</p>
+    <p>
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Terms of Service</a> |
+      <a href="#">Contact</a>
+    </p>
+  </footer>
+</body>
+</html>
